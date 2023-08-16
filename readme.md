@@ -13,3 +13,7 @@ configuration :
 
 
 nameid | name | occupation | Address
+
+
+
+separate sp spi and add impl and bl folder to separate port adapater and bussiness logics

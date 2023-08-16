@@ -2,3 +2,4 @@ Flask
 mysqlclient
 sqlalchemy
 python-dotenv
+sqlalchemy-utils
