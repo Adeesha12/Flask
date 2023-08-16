@@ -10,3 +10,6 @@ configuration :
     "module": "app",
     "justMyCode": true
 }
+
+
+nameid | name | occupation | Address

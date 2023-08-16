@@ -5,6 +5,11 @@ items = []
 # Blueprint
 @app.route("/addUser", methods = ["POST"])
 def add_user():
+    """
+    need to add this  nameid | name | occupation | Address 
+    only ocupation can be none 
+    name id must be unique to name 
+    """
     data = request.get_json()
     if data is None or 'user' not in data:
         return jsonify({'error':'Item name is required'})
@@ -16,6 +21,9 @@ def add_user():
 
 @app.route("/updateUser", methods = ["PUT"])
 def update_user():
+    """
+    only update by the name id
+    """
     data = request.get_json()
     
     len(items)
@@ -23,10 +31,14 @@ def update_user():
 
 @app.route("/deleteUser", methods = ["DELETE"])
 def delete_user():
+    """
+    only delete by the name id
+    """
     return 'delete an user'
 
 @app.route("/getUsers", methods = ["GET"])
 def get_users():
+    "can get data by name id, name, address and ocupation"
     results = jsonify(items)
     return results, 200
 

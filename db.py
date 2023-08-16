@@ -22,11 +22,13 @@ class DataTable(Base):
     __tablename__ = 'solution_table'
     id = Column(Integer, primary_key=True)
     name = Column(String)
+    occupation = Column(String)
+    Address = Column(String)
 
 # Check if the table exists, and if not, create it
 if not engine.dialect.has_table(engine, 'solution_table'):
     Base.metadata.create_all(engine)
-    print("Table created !")
+    print("create Table if not exist !")
 
 # Close the session
 session.close()
