@@ -1,6 +1,6 @@
 from abc import ABC,abstractclassmethod
 
-class db_storage(ABC):
+class UsermanagemantdatabaseSPI(ABC):
     
     
     @abstractclassmethod
