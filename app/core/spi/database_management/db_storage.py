@@ -4,19 +4,19 @@ class db_storage(ABC):
     
     
     @abstractclassmethod
-    def ingest_data():
+    def ingest_data(self):
         pass
     
     @abstractclassmethod
-    def read_data():
+    def read_data(self):
         pass
     
     @abstractclassmethod
-    def edit_data():
+    def edit_data(self):
         pass
     
     @abstractclassmethod
-    def remove_data():
+    def remove_data(self):
         pass
     
     
