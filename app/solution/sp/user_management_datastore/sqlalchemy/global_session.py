@@ -19,7 +19,7 @@ class SQLAlchemySessionCreation:
             )
         Session = sessionmaker(bind=Engine)
         
-    def create_db_string(host_name, db_name, username, password):
+    def create_db_string(self,host_name, db_name, username, password):
         db_endpoint = f'mysql+mysqlclient://{username}:{password}@{host_name}'
         if db_name:
             db_endpoint = f'{db_endpoint}/{db_name}'
