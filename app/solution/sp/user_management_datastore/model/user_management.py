@@ -7,13 +7,13 @@ mapper_registery = registry()
 @mapper_registery.mapped
 class UsermanagemantTable():
     __tablename__ = 'solution_table'
-    id = Column(Integer, primary_key=True)
+    Id = Column(Integer, primary_key=True)
     name = Column(String)
     occupation = Column(String)
     address = Column(String)
 
     def __repr__(self):
-        return "<SystemSettingsTable(%r, %r, %r, %r)>" % (self.id,
+        return "<SystemSettingsTable(%r, %r, %r, %r)>" % (self.Id,
                                                         self.name,
                                                         self.occupation,
                                                         self.address)

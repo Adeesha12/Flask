@@ -4,7 +4,7 @@ class UsermanagemantdatabaseSPI(ABC):
     
     
     @abstractclassmethod
-    def ingest_data(self):
+    def insert_data(self):
         pass
     
     @abstractclassmethod
